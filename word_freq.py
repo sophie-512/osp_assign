@@ -25,7 +25,7 @@ for line in lines:
 		if tok not in word:
 			word[tok]=1
 		else:
-			word[tok]=word[tok]+1
+			word[tok]+=1
 word=sorted(word.items(),key=lambda item:item[1],reverse=True)
 
 for i in word:
